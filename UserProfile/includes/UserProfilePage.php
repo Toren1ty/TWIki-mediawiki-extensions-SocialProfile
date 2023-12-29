@@ -1094,8 +1094,8 @@ class UserProfilePage extends Article {
 
 		$profileLinks = [];
 		if ( $this->isOwner() ) {
-			$profileLinks['user-edit-profile'] =
-				'<a href="' . htmlspecialchars( $update_profile->getFullURL() ) . '">' . wfMessage( 'user-edit-profile' )->escaped() . '</a>';
+			//$profileLinks['user-edit-profile'] =
+			//	'<a href="' . htmlspecialchars( $update_profile->getFullURL() ) . '">' . wfMessage( 'user-edit-profile' )->escaped() . '</a>';
 			$profileLinks['user-upload-avatar'] =
 				'<a href="' . htmlspecialchars( $upload_avatar->getFullURL() ) . '">' . wfMessage( 'user-upload-avatar' )->escaped() . '</a>';
 			$profileLinks['user-watchlist'] =
@@ -1116,11 +1116,11 @@ class UserProfilePage extends Article {
 			);
 
 			if ( $relationship == false ) {
-				$profileLinks['user-add-friend'] =
-					'<a href="' . htmlspecialchars( $add_friend->getFullURL() ) . '" rel="nofollow">' . wfMessage( 'user-add-friend' )->escaped() . '</a>';
+				//$profileLinks['user-add-friend'] =
+				//	'<a href="' . htmlspecialchars( $add_friend->getFullURL() ) . '" rel="nofollow">' . wfMessage( 'user-add-friend' )->escaped() . '</a>';
 
-				$profileLinks['user-add-foe'] =
-					'<a href="' . htmlspecialchars( $add_foe->getFullURL() ) . '" rel="nofollow">' . wfMessage( 'user-add-foe' )->escaped() . '</a>';
+				//$profileLinks['user-add-foe'] =
+				//	'<a href="' . htmlspecialchars( $add_foe->getFullURL() ) . '" rel="nofollow">' . wfMessage( 'user-add-foe' )->escaped() . '</a>';
 			} else {
 				if ( $relationship == 1 ) {
 					$profileLinks['user-remove-friend'] =
@@ -1141,9 +1141,9 @@ class UserProfilePage extends Article {
 					] ) ) . '" rel="nofollow">' .
 					wfMessage( 'user-send-message' )->escaped() . '</a>';
 			}
-			$profileLinks['user-send-gift'] =
-				'<a href="' . htmlspecialchars( $give_gift->getFullURL() ) . '" rel="nofollow">' .
-				wfMessage( 'user-send-gift' )->escaped() . '</a>';
+			//$profileLinks['user-send-gift'] =
+			//	'<a href="' . htmlspecialchars( $give_gift->getFullURL() ) . '" rel="nofollow">' .
+			//	wfMessage( 'user-send-gift' )->escaped() . '</a>';
 		}
 
 		$profileLinks['user-contributions'] =
